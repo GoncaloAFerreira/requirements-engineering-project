@@ -21,7 +21,7 @@
 3. IT specialist - They care about the equipment and would need to keep the equipment up-to-date
 4. Government - They care about giving the equipment or supplying the college with funds for the system/equipment
 5. College - They want a system for booking equipment and giving the students/staff an easier time.
-- Challenge
+- Challenges
 1. Students might want more control over the equipment and its use, while the IT specialists might want no modification of the settings
 ## 5. Goals
 1. The system should help the students/staff have an easier time booking and understanding what there is available.
@@ -34,7 +34,7 @@
 3. Depending on students and staff count there might not be enough equipment for the traffic
 - Cannot Currently assume are required
 1. A mobile app
-2.
+2. A database
 ## 7. Candidate Requirements
 - Functional Requirements
 1. The system shall allow the users to book equipment at a specific date and time
