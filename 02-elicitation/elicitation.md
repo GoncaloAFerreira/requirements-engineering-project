@@ -24,5 +24,19 @@
 ## 4. Information sources
 www.google.com
 ## 5. Elicitation questions
+| Stakeholder | Questions |
+| ----------- | --------- |
+| Student | How do you book equipment currently? |
+| Lecturer | Have you encountered a time when you were unable to book equipment for a lesson? and why couldn't you |
+| Equipment Manager | After booking equipment how long do you have to wait and is there anyone that doesn't need to wait? |
+| Equipment Manager | Follow-up: How many pieces of equipment can you book and is there anyone who can book more or just one? |
+| Department Manager | What type of records system do you use? |
+| College | How much traffic do you get for the system? |
 ## 6. Interview notes
+--Three Things learnt
+1. the system gets over 80 bookings monthly by students and 120 bookings monthly by lecturer
+2. many students were unwilling to book equipment due to the current method
+3. Students are reserved to one booking a month regardless of if they have returned the equipment
+--One thing we still don't know
+1. We could not pinpoint whether it was human error or a system fault which allowed double-bookings
 ## 7. Candidate requirement
