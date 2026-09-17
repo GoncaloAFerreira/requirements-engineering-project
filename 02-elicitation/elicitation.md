@@ -22,7 +22,7 @@
 | What happens when equipment is returned damaged | Equipment Manager |
 | What happens when all the equipment is booked and there is still demand | Equipment Manager |
 ## 4. Information sources
-www.google.com
+Potential Sources: Student, Lecturer, Equipment Technician, Department Administrator, Equipment Manager, College.
 ## 5. Elicitation questions
 | Stakeholder | Questions |
 | ----------- | --------- |
@@ -41,3 +41,8 @@ www.google.com
 - One thing we still don't know
 1. We could not pinpoint whether it was human error or a system fault which allowed double-bookings
 ## 7. Candidate requirement
+The system shall - 
+1. Prevent overbookings.
+2. Allow accessibility for those with impairment
+3. Allow everyone to book equipment without direct department interaction
+4. The system shall support up to 300 users monthly and 15 users daily.
