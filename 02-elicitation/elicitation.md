@@ -15,6 +15,12 @@
 | Technician | Know what equipment is due out and back | Late or missing equipment |
 | Equipment Manager | Maintain accountability for equipment | Equipment being lost or used without authorisation |
 ## 3. Unknowns
+| Unknown | Who could answer? |
+| ------------- | ------------- |
+| Who is allowed to book specialist equipment? | Equipment Manager |
+| What happens when equipment is returned late | Equipment technician |
+| What happens when equipment is returned damaged | Equipment Manager |
+| What happens when all the equipment is booked and there is still demand | Equipment Manager |
 ## 4. Information sources
 ## 5. Elicitation questions
 ## 6. Interview notes
