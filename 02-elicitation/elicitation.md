@@ -22,6 +22,7 @@
 | What happens when equipment is returned damaged | Equipment Manager |
 | What happens when all the equipment is booked and there is still demand | Equipment Manager |
 ## 4. Information sources
+www.google.com
 ## 5. Elicitation questions
 ## 6. Interview notes
 ## 7. Candidate requirement
