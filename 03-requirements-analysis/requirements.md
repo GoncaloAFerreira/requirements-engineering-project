@@ -32,7 +32,6 @@ Information missing: The information missing is what type of accessibility is re
 
 | ID | Requirement | Source | How could we verify it? |
 | FR-01 | The system shall allow authorised users to view equipment | Student/Staff | View One equipment|
-|
 
 
 ## 5. Quality Requirements
