@@ -33,12 +33,21 @@ Information missing: The information missing is what type of accessibility is re
 | ID | Requirement | Source | How could we verify it? |
 | ------------- | ------------- | ------------- | ------------- | 
 | FR-01 | The system shall allow authorised users to view equipment | Student/Staff | View One equipment|
+| FR-02 | The system shall allow to book | Student/Staff | book an equipment |
+| FR-03 | The system shall prevent double-booking | It Admin | Try and double book |
 
 
 ## 5. Quality Requirements
 
+| ID | Quality Requirement | Why does it matter? | How could we verify it? |
+| ------------- | ------------- | ------------- | ------------- | 
+| NFR-01 | System shall open in 2 sec | faster open time less wait on the user | open the system and check if it opens in 2 sec or less|
 
 ## 6. Project Application
 
+This could apply to the project because it Identifies the source, examines the requirement, Ask the stakeholder questions, Think about verification and record an unknown
 
 ## 7. Reflection
+
+1. What makes an requirement difficult to understand is when the requirement is worded badly or to vague
+
