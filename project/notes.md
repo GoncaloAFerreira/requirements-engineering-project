@@ -12,3 +12,18 @@ The organisation is considering a software system to improve the booking process
 
 One thing to consider that the stakeholder mentioned above such as IT specialists, parents, coaches, instructors and referees are potential stakeholders and not confirmed in the scenario.
 
+## 1.2 Problem statement and goals
+
+The current system has a lot of flaws such as: 
+
+1. **Conflicting bookings**
+   - a.	The system shouldn’t allow the users to double-book and not allow closing times, for example one booking ends at 3pm and you can book one for 2pm onwards.
+2. **Availability**
+   -The system should allow the users to be able to check the dates and time for when the booking is available.
+3. **Staff workload**
+   -The system needs to reduce the current manual administration and allow a less prone method for difficult keeping information up to date
+4. **Accessibility**
+   -The system might be hard for people with disabilities or older adults so it might be good to access that problem using a simpler design and more straight forward way
+5. **User Information**
+   -The current system is concerned about user information so the system should be able to use a good encryption method to keep every information hard to get and also hidden from the normal user
+
