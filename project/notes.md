@@ -1,4 +1,5 @@
-##Background and current situation
+#Background and current situation
+
 Describe the current process, the main problems and the people affected. Base your description on the scenario and clearly identify any assumptions.
 The community organization currently manages the sports pitches, halls, courts and activity facilities, Currently the bookings are handled through phone calls, emails, spreadsheets and calendars.
 The main difficulties with the current approach are conflicting bookings, difficulty checking availability, cancellations, no-shows, staff spending time answering booking queries, difficulty keeping information up to date, different rules for each facility, protecting user information and accessibility and usability concerns.
