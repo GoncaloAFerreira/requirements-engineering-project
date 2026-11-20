@@ -104,3 +104,19 @@ The system needs to run with these following constraints:
 
 5. **Booking policies**
    - Consider the restrictions regarding eligibility, cancellations and advance bookings but these policies are currently unknown and needs clarification.
+
+## 1.5 Assumptions, Candidate Requirements and Open Questions
+
+| ID | Type | Description | Evidence/Status | Action Needed |
+| --- | --- | --- | --- | --- |
+| A01 | Assumption | Each booking involves one facility | Not confirmed | Clarify with facility manager |
+| A02 | Assumption | Different permissions for staff and facility users | Not confirmed | Clarify with staff responsibilities and permissions |
+| A03 | Assumption | Consecutive bookings without a time gap | Not confirmed | Confirm where preparation time is required |
+| CR01 | Candidate requirement | Booking confirmation messages | Proposed feature | Check whether the users need confirmation messages |
+| CR02 | Candidate requirement | User registration and accounts | Proposed feature | Confirm where registration is necessary |
+| CR03 | Candidate requirement | Bookings reminders | Proposed feature | Investigate if reminders would reduce no-shows |
+| Q01 | Open question | How far in advance can facilities be booked? | No rule supplied | Confirm advance booking policy |
+| Q02 | Open question | What happens when a user cancels a booking? | No rule supplied | Confirm cancellation policy |
+| Q03 | Open question | What happens when a user doesn’t attend a booking | No rule supplied | Clarify no show policy |
+| Q04 | Open question | Can staff override existing bookings? | No rule supplied | Confirm staff authority |
+| Q05 | Open question | What personal information is needed when making | No rule supplied | Check booking information and privacy needs |
