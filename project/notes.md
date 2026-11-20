@@ -55,3 +55,52 @@ The two important questions I would ask are:
 
 2. What difficulties do users experience with the current process?
    - Facility users.
+
+## 1.4 Scope and system boundary
+
+### In Scope
+
+The proposed system will focus on:
+
+| Capability | Reason to include it |
+| --- | --- |
+| Viewing sports and activity facilities | Helps users identify suitable facilities |
+| Checking availability | Scenario shows difficulties finding available dates and times. |
+| Making facility bookings | Supports the main purpose of the system. |
+| Preventing conflicting bookings | Addressing the existing double-booking problem |
+| Managing cancellations and booking changes | Scenario shows difficulties with booking changes. |
+| Staff booking management | Reduces manual administration. |
+| Managing facility-specific rules | Different facilities might have different booking rules |
+| Protection of user data | Scenario enquires security and privacy concerns |
+| Accessible user interface | Scenario talks about accessibility and usability concerns |
+
+### Out of Scope
+
+To keep the system focused on facility booking, these will be excluded:
+
+| Capability | Reason for exclusion |
+| --- | --- |
+| Online payments | Payment processing is not talked in the scenario |
+| Physical facility maintenance | The system focuses on managing bookings than maintaining the actual facility |
+| Sports team management | The system is not responsible for managing players or teams |
+| Tournament organisation | Organisition competitions is not the same as the facility booking |
+| Equipment rental | The scenario is focused in booking facilities than equipment |
+
+### Constraints
+
+The system needs to run with these following constraints:
+
+1. **Facility specific rules**
+   - Different facilities might have different booking rules, although the specific restrictions are currently unknown and need clarification from the manager.
+
+2. **Facility availability**
+   - Bookings need to respect existing bookings and operating hours, because there are complains about conflict with bookings.
+
+3. **Security and privacy**
+   - User information must be protected from unauthorized access, it was mentioned in the scenario that the security was a concern.
+
+4. **Accessibility and usability**
+   - Users with different abilities and levels of technical experience needs to be considered, the specific type of users and level of technical experience was not specified so it needs clarification.
+
+5. **Booking policies**
+   - Consider the restrictions regarding eligibility, cancellations and advance bookings but these policies are currently unknown and needs clarification.
