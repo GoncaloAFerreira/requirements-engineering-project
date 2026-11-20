@@ -27,3 +27,31 @@ The current system has a lot of flaws such as:
 5. **User Information**
    - The current system is concerned about user information so the system should be able to use a good encryption method to keep every information hard to get and also hidden from the normal user
 
+## 1.3 Stakeholders, needs and proposed elicitation
+
+| Stakeholder / role | Need or concern | Evidence / source |
+| --- | --- | --- |
+| Facility users | Booking and availability | Scenario C, difficulty checking availability and conflicting bookings |
+| IT support | System maintenance and security | Scenario C, protect user data although the IT support is assumed and needs confirmation |
+| Sports clubs and teams | Group bookings and recurring activities | Scenario C, Investigate question regarding individual and group booking. |
+| Booking Staff | Managing bookings, reducing manual administration and handling cancellations. | Scenario C, Staff are spending time answering booking queries and difficulty keeping information up to date |
+| Facility Managers | Managing facility specific rules, resolving booking conflicts and overseeing facility usage | Scenario C, different facilities having different rules but the manager responsibilities needs confirmation |
+| Users with accessibility needs | Being able to navigate the system and make bookings without any troubles | Scenario C, Accessibility and usability concerns |
+
+### Proposed elicitation techniques
+
+The suitable techniques I would use to investigate stakeholder’s needs are:
+
+1. Interviews which allow us to understand the stakeholder needs and business rules.
+2. Questionnaires which are great to gather information from a larger number of users.
+3. Prototyping/Wireframe which allows us to investigate usability and missing requirements.
+
+### Elicitation questions
+
+The two important questions I would ask are:
+
+1. Should normal users and sports clubs follow the same booking rules?
+   - Stakeholder to ask: Manager.
+
+2. What difficulties do users experience with the current process?
+   - Facility users.
