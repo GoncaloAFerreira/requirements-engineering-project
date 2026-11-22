@@ -62,3 +62,8 @@ treated as failed.
 3. FR03 – Prevents overlapping bookings
 4. FR11 Checks facility-specific booking restrictions.
 5. NFR06 Handles submission timeouts and prevents bookings being duplicated
+
+
+# 3.3 Activity Diagram
+
+![AD01 — Activity Diagram](<images/Activity Diagram (AD01).png>)
