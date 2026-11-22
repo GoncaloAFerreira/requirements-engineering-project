@@ -3,91 +3,21 @@
 
 | ID / type | Requirement statement | Priority | Rationale / verification |
 |---|---|---|---|
-| FR01 / Functional | The system shall allow authorised users to check whether a facility is available for their chosen 
-date and time | Must | Source: Scenario C. Rationale: Checking availability will help users reduce booking queries because 
-they would know before hand when they can book or not. Verification: The user selects a facility and date and then checks 
-if the correct availability information is shown |
-| FR02 / Functional | The system shall allow authorised users to make a booking for a selected facility, date and time 
-using the required booking information. | Must | Source: Scenario C. Rationale: Making the booking will allow the users to 
-be able to reserve the facility without relying entirely on staff assistance. Verification: The user books the hall with 
-the necessary information and then checks if the correct booking is shown |
-| FR03 / Functional | The system shall prevent conflicting bookings by not allowing two bookings of the same facility to 
-overlap during the same time | Must | Source: Scenario C. Rationale: Preventing overlapping bookings reduces booking 
-conflict and make sures facilities are not booked by multiple users at the same time. Verification: The user tries to book 
-during a time that there is already a booking and check if it allows to book or not. |
-| FR04 / Functional | The system shall allow authorised users to cancel bookings subject to a cancellation policy that 
-requires confirmation. | Must | Source: Scenario C. Rationale: Allowing users to cancel bookings will allow that facility 
-to be used again and prevent no -shows. Verification: The user tries to cancel a booking with enough time and check if the 
-booking is there or not. |
-| FR05 / Functional | The system shall allow authorised users to view their own existing bookings. | Must | Source: 
-Scenario C. Rationale: Allowing users to view their existing bookings help them keep track of their reservations without 
-needing to contact staff. Verification: Access a user’s booking record and check if that the correct facility date and 
-time are displayed and that another user’s private booking cannot be accessed. |
-| FR06 / Functional | The system shall allow authorised users to modify bookings to another time or date if that time or 
-date is available. | Should | Source: Scenario C. Rationale: Allowing users to modify the bookings should allow more 
-flexibility to the user and possibly clear schedule for the previous time. Verification: The user tries to modify the 
-booking by changing to an available date or time and see if it changes or not |
-| FR07 / Functional | The system shall allow authorised users to view facility information for example space, location, 
-facility size, maximum amount of people. | Should | Source: Scenario C. Rationale: Allowing users to view the facility 
-information they can plan better for their own necessities and to cater to their needs. Verification: The user tries to 
-view the information and check if the correct information for that facility is shown |
-| FR08 / Functional | The system shall allow authorised staff to view booking information by date and time of the specific 
-booking. | Must | Source: Scenario C. Rationale: Allowing staff to view booking information will allow them to help the 
-user with specific information of that booking, like time, date, which facility. Verification: The staff tries to view a 
-valid booking and check if that information is shown for the correct booking. |
-| FR09 / Functional | The system shall allow authorised staff to make changes to an existing valid booking | Must | 
-Source: Scenario C. Rationale: By Allowing staff to change existing valid bookings it allow staff to help users to change 
-specific information like facility location, change time or date and allow more flexibility on the user side Verification: 
-The staff tries to change a valid existing booking and change specific information like date or facility location and 
-check if that information is shown for the correct booking. |
-| FR10 / Functional | The system shall allow authorised staff to manage facility availability if a facility cannot be 
-booked | Must | Source: Scenario C. Rationale: Allowing the staff to manage facility availability will allow the staff to 
-manage the availability of the facility and prevent booking during unavailable periods or any unexpected closure. 
-Verification: The user chooses a facility that is currently available, An authorised staff changes it to unavailable for a 
-specified date and time and the availability information updates to show that facility cannot be booked for that period. |
-| FR11 / Functional | The system shall check requested bookings against the applicable facility specific booking rules and 
-restrictions | Must | Source: Scenario C. Rationale: This allows the system to cater to all facility rules and 
-restrictions by checking the rules and if it follows them. Verification: The system checks the specific rules for 
-different facilities and check if that booking follows the restrictions and rules. |
-| FR12 / Functional | The system shall send booking confirmation of a submitted successful booking | Could | Source: 
-Proposed Feature (CR01, Section 1.5), requires confirmation. Rationale: This allows the system to send confirmation to the 
-user and by doing so it could reduce no-shows or users forgetting about the booking and confirm that the booking is valid. 
-Verification: The user books a facility and check if the system sends a confirmation message. |
-| NFR01 / Non-Functional | The system shall allow only authorised users to access or modify booking information if they 
-are authorised to access or modify that booking | Must | Source: Scenario C. Rationale: This requirement matters because 
-this allows to protect user data and keep everything to their specified authorised users. Verification: Check if an 
-unauthorized user has access to a booking that is not meant so see and then check if they are able to check a booking that 
-is meant for them. |
-| NFR02 / Non-Functional | The system shall collect only the personal information necessary for creating and managing 
-facility bookings | Must | Source: Scenario C. Rationale: The booking should avoid showing unnecessary personal 
-information because of privacy concerns. Verification: Check the personal information requested during the booking process 
-and check with a correct list of necessary information. |
-| NFR03 / Non Functional | The system shall allow authorised users with disabilities to complete a facility booking using 
-only keyboard without requiring mouse input. | Must | Source: Scenario C. Rationale: Users with mobility issues or 
-accessibility needs might struggle with mouse dependent interfaces so the system should allow the user to navigate it with 
-keyboard only. Verification: Check if an authorised user can book a facility using only keyboard and check if that user 
-can reach and operate the necessary controls. |
-| NFR04 / Non-Functional | The system shall have a booking completion of at least 80% during usability testing, allowing 
-authorised users to complete the booking process without assistance | Must | Source: Scenario C, (Completion target is 
-proposed). Rationale: The booking process should be straightforward for users with different levels of technical skills, 
-achieving the completion rate would help show that users can make bookings without needing assistance from staff. 
-Verification: Conduct a small-scale usability test involving 10-20 participants attempting to book a facility without 
-staff assistance. Record the successful and unsuccessful attempts and calculate the completion rate and compare it to the 
-target. |
-| NFR05 / Non Functional | The system shall under normal conditions process the facility booking in under 60 seconds for 
-at least 80% of the requests | Should | Source: Proposed quality requirement and proposed target time limit. Rationale: 
-The booking process should be able to be done under the time limit provided by users with different levels of technical 
-skills, Excessive delays would make the system less useful because it stop facilities being booked or feedback because of 
-poor user experience it could make the user abandon the booking and possible feedback for the system. Verification: Do a 
-small performance test under a defined work load and measure the system’s response time for booking submissions and check 
-if at least 80% of the requests complete within the proposed limit. |
-
-| NFR06 / Non-Functional | The system shall handle timeouts during booking without creating duplicate or incomplete 
-booking records and will inform the user of the booking status before allowing them to try again. | Must | Source: 
-Proposed quality requirement, motivated by conflicting bookings in Scenario C. Rationale: By handling booking timeouts 
-correctly it helps prevent duplicate or lost bookings and make sures users understand whether their booking was recorded 
-
-successfully. Verification: Simulate a timeout in a booking submission and check whether the booking was recorded. Try to 
-submit the booking again and verify that no duplicate or incomplete booking record was made and that the user receives 
-feedback. |
-
+| FR01 / Functional | The system shall allow authorised users to check whether a facility is available for their chosen date and time | Must | Source: Scenario C. Rationale: Checking availability will help users reduce booking queries because they would know before hand when they can book or not. Verification: The user selects a facility and date and then checks if the correct availability information is shown |
+| FR02 / Functional | The system shall allow authorised users to make a booking for a selected facility, date and time using the required booking information. | Must | Source: Scenario C. Rationale: Making the booking will allow the users to be able to reserve the facility without relying entirely on staff assistance. Verification: The user books the hall with the necessary information and then checks if the correct booking is shown |
+| FR03 / Functional | The system shall prevent conflicting bookings by not allowing two bookings of the same facility to overlap during the same time | Must | Source: Scenario C. Rationale: Preventing overlapping bookings reduces booking conflict and make sures facilities are not booked by multiple users at the same time. Verification: The user tries to book during a time that there is already a booking and check if it allows to book or not. |
+| FR04 / Functional | The system shall allow authorised users to cancel bookings subject to a cancellation policy that requires confirmation. | Must | Source: Scenario C. Rationale: Allowing users to cancel bookings will allow that facility to be used again and prevent no -shows. Verification: The user tries to cancel a booking with enough time and check if the booking is there or not. |
+| FR05 / Functional | The system shall allow authorised users to view their own existing bookings. | Must | Source: Scenario C. Rationale: Allowing users to view their existing bookings help them keep track of their reservations without needing to contact staff. Verification: Access a user’s booking record and check if that the correct facility date and time are displayed and that another user’s private booking cannot be accessed. |
+| FR06 / Functional | The system shall allow authorised users to modify bookings to another time or date if that time or date is available. | Should | Source: Scenario C. Rationale: Allowing users to modify the bookings should allow more flexibility to the user and possibly clear schedule for the previous time. Verification: The user tries to modify the booking by changing to an available date or time and see if it changes or not |
+| FR07 / Functional | The system shall allow authorised users to view facility information for example space, location, facility size, maximum amount of people. | Should | Source: Scenario C. Rationale: Allowing users to view the facility information they can plan better for their own necessities and to cater to their needs. Verification: The user tries to view the information and check if the correct information for that facility is shown |
+| FR08 / Functional | The system shall allow authorised staff to view booking information by date and time of the specific booking. | Must | Source: Scenario C. Rationale: Allowing staff to view booking information will allow them to help the user with specific information of that booking, like time, date, which facility. Verification: The staff tries to view a valid booking and check if that information is shown for the correct booking. |
+| FR09 / Functional | The system shall allow authorised staff to make changes to an existing valid booking | Must | Source: Scenario C. Rationale: By Allowing staff to change existing valid bookings it allow staff to help users to change specific information like facility location, change time or date and allow more flexibility on the user side Verification: The staff tries to change a valid existing booking and change specific information like date or facility location and check if that information is shown for the correct booking. |
+| FR10 / Functional | The system shall allow authorised staff to manage facility availability if a facility cannot be booked | Must | Source: Scenario C. Rationale: Allowing the staff to manage facility availability will allow the staff to manage the availability of the facility and prevent booking during unavailable periods or any unexpected closure. Verification: The user chooses a facility that is currently available, An authorised staff changes it to unavailable for a specified date and time and the availability information updates to show that facility cannot be booked for that period. |
+| FR11 / Functional | The system shall check requested bookings against the applicable facility specific booking rules and restrictions | Must | Source: Scenario C. Rationale: This allows the system to cater to all facility rules and restrictions by checking the rules and if it follows them. Verification: The system checks the specific rules for different facilities and check if that booking follows the restrictions and rules. |
+| FR12 / Functional | The system shall send booking confirmation of a submitted successful booking | Could | Source: Proposed Feature (CR01, Section 1.5), requires confirmation. Rationale: This allows the system to send confirmation to the user and by doing so it could reduce no-shows or users forgetting about the booking and confirm that the booking is valid. Verification: The user books a facility and check if the system sends a confirmation message. |
+| NFR01 / Non-Functional | The system shall allow only authorised users to access or modify booking information if they are authorised to access or modify that booking | Must | Source: Scenario C. Rationale: This requirement matters because this allows to protect user data and keep everything to their specified authorised users. Verification: Check if an unauthorized user has access to a booking that is not meant so see and then check if they are able to check a booking that is meant for them. |
+| NFR02 / Non-Functional | The system shall collect only the personal information necessary for creating and managing facility bookings | Must | Source: Scenario C. Rationale: The booking should avoid showing unnecessary personal information because of privacy concerns. Verification: Check the personal information requested during the booking process and check with a correct list of necessary information. |
+| NFR03 / Non Functional | The system shall allow authorised users with disabilities to complete a facility booking using only keyboard without requiring mouse input. | Must | Source: Scenario C. Rationale: Users with mobility issues or accessibility needs might struggle with mouse dependent interfaces so the system should allow the user to navigate it with keyboard only. Verification: Check if an authorised user can book a facility using only keyboard and check if that user can reach and operate the necessary controls. |
+| NFR04 / Non-Functional | The system shall have a booking completion of at least 80% during usability testing, allowing authorised users to complete the booking process without assistance | Must | Source: Scenario C, (Completion target is proposed). Rationale: The booking process should be straightforward for users with different levels of technical skills, achieving the completion rate would help show that users can make bookings without needing assistance from staff. Verification: Conduct a small-scale usability test involving 10-20 participants attempting to book a facility without staff assistance. Record the successful and unsuccessful attempts and calculate the completion rate and compare it to the target. |
+| NFR05 / Non Functional | The system shall under normal conditions process the facility booking in under 60 seconds for at least 80% of the requests | Should | Source: Proposed quality requirement and proposed target time limit. Rationale: The booking process should be able to be done under the time limit provided by users with different levels of technical skills, Excessive delays would make the system less useful because it stop facilities being booked or feedback because of poor user experience it could make the user abandon the booking and possible feedback for the system. Verification: Do a small performance test under a defined work load and measure the system’s response time for booking submissions and check if at least 80% of the requests complete within the proposed limit. |
+| NFR06 / Non-Functional | The system shall handle timeouts during booking without creating duplicate or incomplete booking records and will inform the user of the booking status before allowing them to try again. | Must | Source: Proposed quality requirement, motivated by conflicting bookings in Scenario C. Rationale: By handling booking timeouts correctly it helps prevent duplicate or lost bookings and make sures users understand whether their booking was recorded successfully. Verification: Simulate a timeout in a booking submission and check whether the booking was recorded. Try to submit the booking again and verify that no duplicate or incomplete booking record was made and that the user receives feedback. |
