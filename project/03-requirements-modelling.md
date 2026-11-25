@@ -79,3 +79,40 @@ treated as failed.
 | Facility – FacilityRule | FR11 | Can the same rule be used in several facilities? |
 | Facility - UnavailablePeriod | FR01, FR10 | When the facility closes does it apply to multiple facilities at the same time? |
 | FacilityUser attributes | NFR02, Q05 | What personal information is required to create and manage bookings. |
+
+## 3.5 Model consistency check
+
+Explain how your models agree with your written requirements. Identify important inconsistencies, missing information or new requirements questions discovered through modelling.
+While making my UML models, I checked if they were consistent with the requirements catalogue and if they were true to them.
+
+The Use Case Diagram (UC-D01) represents the two actors which are facility user and booking staff and represented their responsibilities and how different they are, for example how the facility user can check 
+availability and modify own booking while Booking staff can modify an existing booking and manage the availability.
+
+References for UC-D01 are FR01, FR06, FR09, FR10
+
+The Use Case Narrative (UC01) and the Activity Diagram (AD01) both represent the process on how the booking is done, while the Use Case Narrative explains how a user makes the booking and includes the successful steps 
+and alternative situations the Activity Diagram is a visual representation of that but includes the availability checks the facility restrictions and the timeout handling.
+
+References for UC01 and AD01 are FR01, FR02, FR03, FR11, NFR06
+
+The Conceptual Class Diagram (CD01) shows the important domain concepts and what their attributes and relationships are which contains the Facility, Booking, FacilityUser and their relationship is That FacilityUser can 
+have 0 or many Booking but each booking can only have one FacilityUser, the Booking can have only one facility but the facility can have 0 or many bookings which supports my booking requirements.
+
+There are also two other classes which support the requirements FR10 and FR11, they are UnavailablePeriod and FacilityRule, these two classes support the facility availability management and facility specific 
+restrictions that was talked before
+
+References for CD01 FR02, FR05, FR07, FR10, FR11
+
+While developing my UML models I also identified that there was some issues and missing information that required clarification, for example:
+
+While making my Activity Diagram (AD01) I realized that when checking for availability only once could allow for a user to reserve a facility between the initial availability check and the final submission, so I added a 
+second check that helps prevent that overlapping booking.
+
+Another issue that I discovered was related to NFR06 which is about Timeout Handling and I figured out that a booking could have been recorded when a timeout occurs because I had initially that the user can retry 
+without checking the status of the booking which could duplicate the booking which would be a bad thing because the requirements need no double booking.
+
+While making my Conceptual Class Diagram (CD01) I made assumptions about the relationship for example how each booking belongs to a Facility and one FacilityUser but a FacilityUser can have multiple bookings and the 
+Facility can have multiple bookings, these are assumptions and they helped me establish the relationship but they require confirmation because multiple facilities or booking ownership might be allowed.
+
+One other remaining inconsistency between UC01 and AD01 is that UC01 allows a user to abandon the booking attempt if it violates a facility-specific rule but in my AD01 they would be automatically returned to the 
+facility selection. This is a remaining inconsistency that needs to be reviewed later.
