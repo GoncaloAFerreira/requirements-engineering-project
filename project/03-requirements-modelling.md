@@ -81,10 +81,6 @@ treated as failed.
 | FacilityUser attributes | NFR02, Q05 | What personal information is required to create and manage bookings. |
 
 ## 3.5 Model consistency check
-
-Explain how your models agree with your written requirements. Identify important inconsistencies, missing information or new requirements questions discovered through modelling.
-While making my UML models, I checked if they were consistent with the requirements catalogue and if they were true to them.
-
 The Use Case Diagram (UC-D01) represents the two actors which are facility user and booking staff and represented their responsibilities and how different they are, for example how the facility user can check 
 availability and modify own booking while Booking staff can modify an existing booking and manage the availability.
 
