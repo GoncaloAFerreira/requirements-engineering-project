@@ -71,3 +71,11 @@ treated as failed.
 # 3.4 Conceptual UML Class Diagram
 
 ![CD01 - Conceptual Class Diagram](<images/CD01 - Conceptual Class Diagram.drawio.png>)
+
+| Association / feature | Requirement evidence | Open question / assumption |
+|---|---|---|
+| Facility – Booking | FR02, FR03, A01 | Does the booking involve more than one facility? |
+| FacilityUser - Booking | FR02, FR05 | Can multiple users join in the same booking? |
+| Facility – FacilityRule | FR11 | Can the same rule be used in several facilities? |
+| Facility - UnavailablePeriod | FR01, FR10 | When the facility closes does it apply to multiple facilities at the same time? |
+| FacilityUser attributes | NFR02, Q05 | What personal information is required to create and manage bookings. |
