@@ -70,4 +70,4 @@ treated as failed.
 
 # 3.4 Conceptual UML Class Diagram
 
-![CD01 — Conceptual Class Diagram](images/CD01 - Conceptual Class Diagram.drawio.png)
+![CD01 - Conceptual Class Diagram](<images/CD01 - Conceptual Class Diagram.drawio.png>)
