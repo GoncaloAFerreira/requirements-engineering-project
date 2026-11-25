@@ -67,3 +67,7 @@ treated as failed.
 # 3.3 Activity Diagram
 
 ![AD01 — Activity Diagram](<images/Activity Diagram (AD01).png>)
+
+# 3.4 Conceptual UML Class Diagram
+
+![CD01 — Conceptual Class Diagram](images/CD01.png)
